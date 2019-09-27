@@ -1,0 +1,24 @@
+Some UX pointers:
+1. We should always know what percentage of customers are using what email client. Because if the majority can’t view kinetic functionality, we’ve wasted everyone’s time and the clients money. A big watch-out is gmail!
+2. We need to factor in an extended period of time for build and test. As we are adding functionality that requires more QA and all kinetic emails WILL require a fallback version for customers who cannot view kinetic.
+3. Just because we can, doesn’t mean we should (does it aid KPIs?)
+4. Mobile versions should be looked at first. That’s where all the challenges will be.
+5. And finally... MAKE IT USEABLE PEOPLE!
+
+Kinetic email examples
+Inspiration for the art of the possible only, NOT aligned to UX best practice.
+http://freshinbox.com/gallery/nest-protect-carousel.html
+http://freshinbox.com/gallery/bnq-wax-snowflake.html
+https://codepen.io/reallygoodemails/pen/ZBwppG
+https://createsend.com/t/ViewEmail/r/D7F8C60CD98EA81F2540EF23F30FEDED/C67FD2F38AC4859C?_ga=2.139474419.1138152795.1525278323-917845731.1525278323
+http://apps.balloondog.co.uk/emails/disney/WOE/production/
+https://codepen.io/RobStehle/pen/XgwKgJ
+
+Kinetic capabilities by email client
+Great for making decisions based on customer email client knowledge and what to avoid when building.
+http://freshinbox.com/resources/css.php
+
+Kinetic build resources
+Some wizz-bang css animation and interaction that have demo’s and code included.
+http://freshinbox.com/resources/techniques.php
+https://daneden.github.io/animate.css/
