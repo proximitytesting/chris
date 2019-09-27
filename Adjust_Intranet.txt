@@ -1,0 +1,36 @@
+To change the colour of the menu and titles on the Intranet:
+
+1) Go to Appearance > Theme Options > CSS Styles
+2) Add the following code to the end of the CSS code:
+
+/* START OF ATF AMENDS */
+
+#panel-237-0-0-0,
+#panel-237-0-0-2,
+#panel-237-1-0-0,
+#panel-237-1-0-1{
+border-top:2px solid #00aa7b !important;
+}
+
+h3.widget-title{
+color: #00aa7b !important;
+}
+
+.home h1{
+color:#00aa7b !important;
+}
+
+.menu a:hover,
+ul.menu > li:hover {
+background-color: #24b9d7 !important;
+}
+
+.menu .current_page_item a, .menu .current-menu-item a{
+background-color: #24b9d7 !important;
+}
+
+.menu {
+	background-color: #00aa7b !important;
+}
+
+/* END OF ATF AMENDS */
