@@ -1,0 +1,73 @@
+Welcome to Proximity – I hope this info is useful!
+
+The clients that you will probably be working for are Procter and Gamble and Ikea. I’ve written step-by-step instructions about how we produce emails for these two clients that can be found at the links below. But I am happy to answer any questions you have at any point. The email builds are not complicated really, the instructions are to do with all the filing/admin kind of stuff that surrounds it all.
+svn://vplsv.rrimm.com/_Client/PGE/Instructions/PGE_Process.docx
+svn://vplsv.rrimm.com/_Client/Ikea/Instructions/IKEA_Process.docx
+
+SVN
+You won’t be able to access the two links above until you set up SVN. We use SVN to make sure that the files we’re working on are up to date with the latest changes made by all users. It’s basically files that are hosted on an SVN server, that we then have access to via our own computers.
+
+Setting up SVN:
+1)	Click into to the “Documents” folder on your computer.
+2)	Create a new folder called SVN.
+3)	Create another new folder within this called “PGE” (for Procter & Gamble), and another called “Ikea”.
+4)	Click into the PGE folder.
+5)	Right click and then select “SVN Checkout…”.
+6)	Where it says “URL of repository”, click the button to the right that has dots inside it.
+7)	Select “PGE” from the list and click OK.
+8)	Where it says “Checkout directory”, make sure the filepath leads to the PGE folder you made on your computer (file path ends with “PGE”).
+9)	Click OK. The files will start downloading into the folder. But it may take quite a long time – maybe an hour or so.
+10)	Once done, you can work on files and add new files.
+11)	Repeat the same process again for Ikea, but just swapping PGE for Ikea.
+
+*IMPORTANT* Using SVN:
+1)	Before you begin work on an existing file, right click on the folder that it sits within the file and click “Update”. This ensures that you’re working on the most up-to-date file.
+2)	If you’ve changes to a file or added files, right click on the folder that they sit within and click “Commit”. It’s helpful to write a few words saying what the changes were in the comments box. Then click OK to commit the changes to SVN. If you don’t do this, no other users will be working on the most up-to-date files.
+3)	If you’ve finished a build, we need to know the SVN link to the HTML file. Right click on the HTML file, then hover over “Tortoise SVN” and select “Repo Browser”. The URL you need is then displayed at the top of the window.
+
+
+Wiki page
+There’s a Tech Wiki page here that has a lot of info on it.
+http://proximitywiki.proximitydev.com/index.php/TECH
+Username: tech
+Password: user
+
+
+S3
+This is an image repository. When we build an email, we host the images within this repository so we can get the email QA tested. We don’t host images here for emails that will be sent because it’s not designed to cope with that volume of traffic.
+
+Check to see if S3 Browser is already installed on your machine. Instructions below if not.
+
+To set up S3:
+PC: https://s3browser.com/download.aspx
+Mac: Please Google “S3 Browser for Mac” or similar to find an alternative.
+
+1)	Once you have S3 (or Mac alternative) up and running, you will need to go to the “Account” menu and “Add new account”.
+2)	Choose “Amazon S3 storage” as the account type. Then you will need to enter an Access Key ID and a Secret Access Key. You can get them from the “E-Mail” section of the tech Wiki page above:
+3)	Once you have entered the codes, you should get “images.proximitylondon.com” appearing as a file on the left hand side of the S3 browser. Click into this and you’ll see a file structure. You can just drag and drop images into folders to host them on S3.
+4)	The file structure should mirror the file structure on SVN where possible, just for ease of use.
+5)	To get the file path for an image, highlight the image and then select the “permissions” tab near the bottom left. The URL should then show up and will look something like this:
+http://s3.eu-west-2.amazonaws.com/images.proximitylondon.com/_2019/PGE/SSM/Jan/BV-EM1/article_l.jpg
+The highlighted section is the only bit that would need to go into an HTML build, but you’ll need to add http:// in front of it. So in the build it would look like this:
+src="http://images.proximitylondon.com/_2019/PGE/SSM/Jan/BV-EM1/article_l.jpg" 
+6)	Ikea images are stored in a different folder. You set this up in the same way as above, but you get the codes you need from here instead: N:\Ikea\Brand Toolkit\05 Process and Working Practices\Amazon S3 Server
+7)	When you add the new account, call it “Ikea”.
+8)	You should get a different list of folders on the left hand side now, one of which is called “ikea-emails”. You can save Ikea email images within the folders in here.
+9)	With the filepaths for Ikea images, you can just highlight the whole URL straight out of S3 and use it as it is. Like this:
+src="http://ikea-emails.s3.amazonaws.com/2018/Apr/PRX-PROJ014422_IKEA_Room_for_change_2018_IS/Email1/hero-bg-2.jpg" 
+10)	With Ikea images, we can use the S3 repository for hosting images for sends.
+
+
+JIRA
+If the QA team find an issue with a build, the issue will probably be reported in JIRA. This is just a messaging system that gives you a list of issues assigned to you. You can then look into them one by one, and re-assign them back to the QA team in JIRA once you’ve fixed the issue.
+
+To set up JIRA: You should have an email invite for JIRA, so you can just follow the link to set up your name and password. I’m happy to give you a run through of how to use JIRA if you’re not familiar with it already.
+
+
+Timesheets
+We need to fill in a weekly timesheet detailing number of hours spent on projects. So it is a good idea to make a note of how long you’re spending on any project throughout the week, or to fill the timesheet out as you go along.
+
+It’s accessible here (I think you may have to use Internet Explorer):
+https://oasysbbdoeu.agencynet.de/
+
+It’s a bit of a clunky system – it’s probably easier if someone just shows you how to work it in person!

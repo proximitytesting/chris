@@ -1,0 +1,60 @@
+QA
+
+Thank you for helping out with our QA!
+
+Basically, I (or Emile, the other developer) build the emails and you check them over and report any issues back to us. We then fix the issues (if any), and when the email has passed you fill out the QA signoff report.
+
+
+
+1)	Making a start
+You will need two links to check an email – the SVN file and the preview link.
+The SVN file is an HTML file in a folder. For example: svn://vplsv.rrimm.com/_Client/PGE/SSM/_2018/Dec/EM1/PGE_SSMAugustEnabler_Email1-UK_v1.00_031218.html
+The preview link gives you the email as a webpage hosted online. For example: http://images.proximitylondon.com/_2018/PGE/SSM/Dec/PGE_SSMAugustEnabler_Email1_v0.01_031218.html 
+You’ll need both for the next stages below.
+
+2)	Test the email on devices
+Use the devices to check that the email displays correctly on both the Gmail App, and the native email app that comes with each device.
+You can send the email to proximitytest@googlemail.com or proximitytest@hotmail.co.uk or proximitytest@yahoo.co.uk 
+To send the email, use this tool: http://mailmanagerii.proximitydev.com/ - You just copy and paste the HTML code from the SVN file into this tool and then send the test email to the test accounts above.
+You should then receive the email in the devices so you can check it.
+
+3)	Test the email on Hotmail, Yahoo and Gmail on your computer
+To log in to the test email accounts above, the password is Pr0ximity!T3sters2016
+The test email you sent before should already be there, so you can just check it on your computer screen.
+
+4)	Test the email on Email On Acid
+Email On Acid gives you a series of screenshots of the email, so you can see what it would look like on multiple email clients.
+Go to: https://app.emailonacid.com/app/login?redirect=/app/cp/dashboard/
+Username is: proximitylondon
+Password is: Proximity2012
+Click on “Email Testing”
+Copy the HTML from the SVN file and paste it into the box. For subject line, you can write anything. For “EMAIL CLIENTS” select “Prox Test Clients”. Click “Run Email Test” at the bottom.
+You should then get a series of screenshots, and we check each one for rendering issues.
+
+5)	Test the email on BrowserStack
+This allows you to see what the email would look like on multiple browsers and operating systems. You only need to check the most recent ones.
+Go to: https://www.browserstack.com/users/sign_in
+Username is: whittle.j@proximitylondon.com
+Password is: Proximity2012
+You can then select different remote machines to test on. We just test on the latest OS and browsers – so that’s Windows 10 and Mac Mojave. And the latest versions of Safari, Firefox, Chrome, Opera and Yandex for each of those.
+You can copy and paste the preview link URL into the different browser windows in order to check the email in each one.
+
+6)	If there’s an issue anywhere, log the issue on JIRA
+We use a program called JIRA where you can log an issue and then I will pick it up and attempt to fix it.
+Go to: https://id.atlassian.com/login?continue=https%3A%2F%2Fproximity.atlassian.net%2Flogin%3FredirectCount%3D1%26dest-url%3D%252Fissues%252F%253Ffilter%253D-1
+Username: kota.n@proximitylondon.com
+Password: Your password
+Write a brief description of the issue you are seeing and where it is occurring (for example, on Outlook 2016, all versions of Yahoo, etc etc).
+Assign it to me or the developer who build the email.
+We will assign it back to you when we think we have fixed the issue.
+Re-test to check that the error has gone. If it has been fixed you can then close the issue.
+If you’re not sure if something’s an issue, just ask.
+
+7)	Fill out the QA report
+I’ve attached a report that you can fill out. I’ve also attached a previous example that has been filled out, so you can see how it’s usually done.
+
+8)	Send the completed QA report to the developer and the account manager
+When all issues have been fixed, email the completed report to the developer who built the email and the account manager who briefed it in.
+
+
+Deen sits behind you and is also doing QA, so you can ask Deen or me any questions if you have them!
